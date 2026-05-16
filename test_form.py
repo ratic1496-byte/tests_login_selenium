@@ -27,4 +27,3 @@ def test_unsuccessful_login(driver):
     driver.find_element(By.ID, "password").send_keys("pass")
     driver.find_element(By.CSS_SELECTOR, "button.radius").click()
     assert "Your username is invalid!" in driver.find_element(By.ID, "flash").text
-+
